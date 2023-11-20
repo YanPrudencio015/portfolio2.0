@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1 id="developer-title">Developer</h1>
+        <nav>
+            <ul id="menu">
+                <li><a class="list" href="#">Menu</a></li>
+                <li><a class="list" href="#apresentation-Container">About Me</a></li>
+                <li><a class="list" href="#skills">Skills</a></li>
+                <li><a class="list" href="#">Projects</a></li>
+                <li><a class="list" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="apresentation-Container">
+            <div id="developer-apresentation">
+             Hello, my name is Yan. I am front end Developer.
+            </div>
+            <div id="apresentation-category">
+                <div class="apresentation-info">
+                    I am a front-end developer. Currently, 
+                    I am studying other frameworks and improving all that I have learned. 
+                    I have the focus and persistence to learn more to be an excellent professional as a programmer. 
+                    My projects are responsive and beautiful in the user's eyes.
+                </div>
+                <div class="apresentation-info">
+                    <img id="developer-character" src="../images/character/yan.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div id="softSkills"></div>
+            <div id="languages"></div>
+        </section>
+
+
+        <section class="MenuMobileContainer">
+                <ul>
+                    <li class="options">
+                        <a>
+                            <span class="options-icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="options-title">Profile</span>
+                        </a>
+                    </li>
+
+                    <li class="options active">
+                        <a href="#">
+                            <span class="options-icon"><ion-icon name="grid-outline"></ion-icon></span>
+                            <span class="options-title">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="options">
+                        <a>
+                            <span class="options-icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                            <span class="options-title">Profile</span>
+                        </a>
+                    </li>
+                <div id="clicked"></div>
+                
+                </ul>
+        </section>
+
+        <section class="submenu-background">
+                <div class="submenu-profile">
+                    <a href="#" class="submenu-profile-links"><button class="submenu-mobile-btn">About Me</button></a>
+                    <a href="#" class="submenu-profile-links"><button class="submenu-mobile-btn">Skills</button></a>
+                    <a href="#" class="submenu-profile-links"><button class="submenu-mobile-btn">Projects</button></a>
+                </div>
+                <div class="submenu-contacts">
+                    <a href="#" class="submenu-profile-links"><button class="submenu-mobile-btn">Linkedin</button></a>
+                    <a href="#" class="submenu-profile-links"><button class="submenu-mobile-btn">GitHub</button></a>
+                    <a href="#" class="submenu-profile-links"><button class="submenu-mobile-btn">E-mail</button></a>
+                </div>
+        </section>
+    </main>
+    
+
+     <!-- <div class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                    <span class="text">Message</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="camera-outline"></ion-icon></span>
+                    <span class="text">Photo</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+     </div> -->
+
+     <!-- <script>
+        const list = document.querySelectorAll(".list");
+
+        function activeLink(){
+            list.forEach((item)=>{
+                item.classList.remove("active");
+                this.classList.add('active');
+            })
+        }
+
+        list.forEach((item)=>{
+            item.addEventListener('click', activeLink)
+        })
+     </script> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./portfolio.js"></script>
+</body>
+</html>
