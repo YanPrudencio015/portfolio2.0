@@ -46,6 +46,7 @@ body{
     background-color: var(--clr);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-self: center;
 
 }
@@ -224,71 +225,272 @@ main{
 
 /* *********************** Estilizando Skills *********************** */
 
-
-
-
 #skills{
-    margin: auto;
-    margin-bottom: 10em;
-
-    margin-top: 15%;
-    width: 95%;
-    height: 11em;
-    gap: 1%;
-    border: solid 1px #F6F1F1;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
-    position: relative;
-    transition: 600ms;
-    padding: 1%;
-
-    display: grid;
-    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-
-#skills:after{
-    content: "Skills";
-    width: 14%;
-    height: 2em;
-    background-color: #FF5B22;
-    position: absolute;
-    bottom: 101%;
-    left: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    font-family: 'Zen Dots', sans-serif;
-    border-radius: 5px;
-    border: solid 5px #fff;
-    outline: solid 5px #ff5f22;
-    color: #fff;
-    transition: 2s;
-    scroll-behavior: smooth;
-}
-
-
-.front{
-    background-color: #fff;
-    height: 100%;
     width: 100%;
+    height: 40em;
+    display: flex;
+    flex-direction: row;
+    background-color: #0174BE;
+    margin: 5% 0;
+    padding: 1%;
+    gap: 5%;
+    cursor: default;
+
+}
+
+#softSkills{
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px #fff; */
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.softSkills-skills{
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    padding: 3% 1%;
+    font-size: 27px;
+
+    
+
+}
+
+#skillsLanguages{
+    width: 50%;
+    height: 100%;
+    border: solid 1px #fff;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.language-icon{
+    border: solid 1px #0174BE;
+    height: 26%;
+    width: 35%;
+    font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    /* background-color: #fff; */
+    box-shadow: 0px 0px 3px -1px #fff;
+}
+
+.icon-logo{
+    font-size: 40px;
+}
+.language-icon:nth-child(1):hover {
+    background-color: #CF0A0A;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(2):hover {
+    background-color: #39A7FF;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(3):hover {
+    background-color: #F4CE14;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(4):hover {
+    background-color: #000;
+    border-radius: 10px;
+    color: #19A7CE;
+    transition: 0.3ms;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+.language-icon:nth-child(5):hover {
+    background-color: #508D69;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(6):hover {
+    background-color: #5B0888;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************** ESTILIZANDO PROJECTS *************************  */
+
+
+
+#projects{
+    width: 100%;
+    height: 50em;
+    margin: 10% 0;
+    background-color: #19A7CE;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding: 1%;
+}
+
+.card-container{
+    width: 15%;
+    height: 16em;
+    box-shadow: 0px 0px 3px -1px #000;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1%;
+    position: relative;
+}
+
+
+.card-img-squad{
+    width: 100%;
+    height: 80%;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+.card-control{
+    width: 80%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 11%;
+    top: 100%;
+
+
+
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+.card-container:hover .card-control{
+    top: 20%;
+}
+
+.card-control-btn{
+    background-color: #0174BE;
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.card-control-btn:hover{
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+
+.card-details{
+    width: 100%;
+    height: 100%;
+   background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20em;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 600ms;
+}
+.cardDetailsOpen{
+    top: 2em;   
+}
+.cardDetailsClose{
+    transition: 600ms;
+    top: 20em;
+}
+
+
+.card-detail-title{
+    font-family: 'Bruno Ace SC', sans-serif;
+    border-bottom: solid 1px #fff;
+    padding: 1%;   
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-framework{
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
+
+.card-detail-title:hover{
+    background-color: #0174BE;
+    color: #fff;
+
 }
 
-.img-framework:hover{
-    transform: scale(1.05);
+.card-detail-text{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Oxygen', sans-serif;
+
 }
+
+
 
 
 
@@ -299,9 +501,285 @@ main{
 
 /* Menu Mobile */
 
+/************** Menu Mobile ***************************/
+
 
 .MenuMobileContainer{
+    width: 100%;
+    height: 5em;
+    background-color: #000;
+    z-index: 100;
+    position: fixed;
+    bottom: -0.6px;
     display: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    z-index: 11;
+}
+
+.MenuMobileContainer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 5%;
+}
+.MenuMobileContainer ul .options{
+    position: relative;
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MenuMobileContainer ul .options a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.MenuMobileContainer ul .options a .options-icon{
+    display: block;
+    position: relative;
+    font-size: 1.7em;
+    transition: 0.6s;
+    color: #0174BE;
+}
+
+.MenuMobileContainer ul .options.active a .options-icon{
+transform: translateY(-56px);
+    
+}
+
+.MenuMobileContainer ul .options a .options-title{
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Bruno Ace SC', sans-serif;
+    transition: 500ms ease ;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.MenuMobileContainer ul .options.active a .options-title{
+    opacity: 1;
+    transform: translateY(10px);
+    transition:  500ms ease ;
+
+    
+}
+
+#clicked{
+    top: -62%;
+    left: 2.3em;
+    position: absolute;
+    background-color: #fff;
+    width: 16%;
+    height: 68%;
+    border-radius: 14px;
+    z-index: -1;
+    border: solid 4px #0174BE;
+    outline: solid 6px #fff;
+}
+
+
+.MenuMobileContainer ul .options:nth-child(1).active ~ #clicked{
+    transform: translateX(calc(2.3em* 0));
+
+}
+
+.MenuMobileContainer ul .options:nth-child(2).active ~ #clicked{
+    transform: translateX(calc(100% * 2));
+}
+
+.MenuMobileContainer ul .options:nth-child(3).active ~ #clicked{
+    transform: translateX(calc(100%* 4));
+}
+
+
+.submenu-background{
+    position: fixed;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    display: none;
+    
+}
+
+.submenu-background-active{
+    transition: 1s;
+    left: 0%;
+    top: 0%;
+}
+
+.submenu-profile{
+    width: 80%;
+    height: 60%;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: #0174BE; */
+    left: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+
+
+
+.submenu-profile-Active{
+    transition: 1.5s;
+    left: 10%;
+    top: 17%;
+}
+
+
+.submenu-profile-links{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.submenu-profile-links .submenu-mobile-btn{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 4px;
+    color: #0174BE;
+    border-radius: 10px;
+    border: solid 2px #0174BE;
+    outline: solid 6px #fff;
+}
+
+.submenu-profile-links .submenu-mobile-btn:active{
+color: #fff;
+background-color: #0174BE;
+transition: 100ms;
+outline: solid 6px transparent;
+}
+
+
+.submenu-contacts{
+    width: 80%;
+    height: 60%;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: #0174BE; */
+    right: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.submenu-contacts-Active{
+    transition: 1.5s;
+    right: 10%;
+    top: 17%;
+}
+
+
+
+
+/**************** MENU SIDE ************************  */
+
+.menuSide-Background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+    display: none;
+}
+
+
+
+
+
+
+
+
+/****************** FOOTER ***************************/
+
+
+footer{
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Osmanya', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Zen Dots', sans-serif;    
+    background-color: #DC5F00;
+    width: 100%;
+    height: 15em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts{
+    width: 50%;
+    height: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Osmanya', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    /* font-family: 'Oxygen', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Zen Dots', sans-serif;  */
+}
+
+.contacts a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.contact-Icon{
+    font-size: 40px;
+    color: #fff;
 }
 
 
@@ -478,64 +956,265 @@ main{
 
 /* *********************** Estilizando Skills *********************** */
 
-
-
-
 #skills{
-    margin: auto;
-    margin-top: 15%;
-    width: 95%;
-    height: 23em;
-    gap: 1%;
-    border: solid 1px #F6F1F1;
-    transition: 600ms;
-    padding: 1%;
-    display: grid;
-    grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
-}
-
-
-#skills:after{
-    content: "Skills";
-    width: 16%;
-    height: 1em;
-    background-color: #FF5B22;
-    position: absolute;
-    bottom: 101%;
-    left: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    font-family: 'Zen Dots', sans-serif;
-    border-radius: 5px;
-    border: solid 5px #fff;
-    outline: solid 5px #ff5f22;
-    color: #fff;
-    transition: 2s;
-    scroll-behavior: smooth;
-}
-
-
-.front{
-    background-color: #fff;
-    height: 100%;
     width: 100%;
+    height: 40em;
+    display: flex;
+    flex-direction: row;
+    background-color: #0174BE;
+    margin: 5% 0;
+    padding: 1%;
+    gap: 5%;
+    cursor: default;
+
+}
+
+#softSkills{
+    width: 50%;
+    height: 100%;
+    /* border: solid 1px #fff; */
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.softSkills-skills{
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    padding: 3% 1%;
+    font-size: 20px;
+
+}
+
+#skillsLanguages{
+    width: 50%;
+    height: 100%;
+    border: solid 1px #fff;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.language-icon{
+    border: solid 1px #0174BE;
+    height: 26%;
+    width: 35%;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    background-color: #fff;
+}
+
+.icon-logo{
+    font-size: 30px;
+}
+.language-icon:nth-child(1):hover {
+    background-color: #CF0A0A;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(2):hover {
+    background-color: #39A7FF;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(3):hover {
+    background-color: #F4CE14;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(4):hover {
+    background-color: #0174BE;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+.language-icon:nth-child(5):hover {
+    background-color: #508D69;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(6):hover {
+    background-color: #5B0888;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+
+
+
+
+
+
+
+
+/* *********************** ESTILIZANDO PROJECTS *************************  */
+
+
+
+#projects{
+    width: 100%;
+    height: 75em;
+    margin: 10% 0;
+    background-color: #19A7CE;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding: 1%;
+}
+
+.card-container{
+    width: 23%;
+    height: 14em;
+    box-shadow: 0px 0px 3px -1px #000;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1%;
+    position: relative;
+}
+
+
+.card-img-squad{
+    width: 100%;
+    height: 80%;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+.card-control{
+    width: 80%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 11%;
+    top: 100%;
+
+
+
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+.card-container:hover .card-control{
+    top: 20%;
+}
+
+.card-control-btn{
+    background-color: #0174BE;
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.card-control-btn:hover{
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+
+.card-details{
+    width: 100%;
+    height: 100%;
+   background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20em;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 600ms;
+}
+.cardDetailsOpen{
+    top: 2em;   
+}
+.cardDetailsClose{
+    transition: 600ms;
+    top: 20em;
+}
+
+
+.card-detail-title{
+    font-family: 'Bruno Ace SC', sans-serif;
+    border-bottom: solid 1px #fff;
+    padding: 1%;   
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-framework{
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
+
+.card-detail-title:hover{
+    background-color: #0174BE;
+    color: #fff;
+
 }
 
-.img-framework:hover{
-    transform: scale(1.05);
+.card-detail-text{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Oxygen', sans-serif;
+
 }
+
+
 
 
 
@@ -584,7 +1263,7 @@ main{
 
 
 
-@media screen and (max-width:660px){
+@media screen and (max-width:730px){
     header{
         width: 100%;
         height: 3em;
@@ -734,309 +1413,263 @@ main{
 
 /* *********************** Estilizando Skills *********************** */
 
-
-
-
 #skills{
-    margin: auto;
-    margin-top: 15%;
-    width: 95%;
-    height: 16em;
-    gap: 1%;
-    border: solid 1px #F6F1F1;
-    transition: 600ms;
-    padding: 1%;
-    display: grid;
-    grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
-}
-
-
-#skills:after{
-    content: "Skills";
-    width: 18%;
-    height: 1em;
-    background-color: #FF5B22;
-    position: absolute;
-    bottom: 101%;
-    left: 3%;
+    width: 100%;
+    height: 50em;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
-    font-family: 'Zen Dots', sans-serif;
-    border-radius: 5px;
-    border: solid 1px #fff;
-    outline: solid 5px #ff5f22;
-    color: #fff;
-    transition: 2s;
-    scroll-behavior: smooth;
-}
-
-
-.front{
-    background-color: #fff;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-framework{
-    width: 67%;
-    height: 80%;
-    object-fit: cover;
-}
-
-.img-framework:hover{
-    transform: scale(1.05);
-}
-
-
-
-
-
-
-/************** Menu Mobile ***************************/
-
-
-.MenuMobileContainer{
-    display: none;
-}
-
-
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:500px){
-    header{
-        width: 100%;
-        height: 4em;
-        background-color: #19A7CE;
-        display: flex;
-        justify-content: space-between;
-        padding: 0 11%;
-        align-items: center;
-        position: fixed;
-        top: 0em;
-        z-index: 100;
-    
-    }
-    
-    #developer-title{
-        font-family: 'Jost', sans-serif;
-        cursor: default;
-        font-size: 35px;
-        color: #fff;
-    }   
-    
-    #menu{
-        display: flex;
-        flex-direction: row;
-        width: 20em;
-        height: 100%;
-        /* border: solid 1px; */
-        justify-content: space-between;
-        list-style: none;
-        display:none;
-    }
-    
-    .list {
-        text-decoration: none;
-        font-size: 15px;
-        color: #fff;
-        font-family: 'Outfit', sans-serif;
-        padding: 5px;
-        border-radius: 10px;
-    
-    
-    }
-    
-    .list:hover{
-        box-shadow: 0px 0px 7px -1px gray;
-        transition: 300ms;
-        background-color: #F6F1F1;
-        color: #19A7CE;
-    }
-    
-    .btn-menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1%;
-        border-radius: 10px;
-        color: #F6F1F1;
-        background-color: #146C94;
-        font-size: 24px;
-        width: 15%;
-        height: 76%;
-    }
-
-
-
-
-
-/* 
-
-**************** Estilizando o MAIN ************************ 
-
-*/
-
-
-
-main{
-    width: 100%;
-    height: 100%;
-}
-
-
-#apresentation-Container{
-    margin: auto;
-    margin-top: 25%;
-    width: 95%;
-    height: 47em;
+    flex-direction: column;
     background-color: #0174BE;
+    margin: 5% 0;
+    padding: 1%;
+    gap: 5%;
+    cursor: default;
+
+}
+
+#softSkills{
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-}
-
-#developer-apresentation {
-    width: 100%;
-    height: 7%;
-    border: solid 1px #fff;
-    border-radius: 10px 10px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-family: 'Bruno Ace SC', sans-serif;
-    color: #fff;
-}
-
-#apresentation-category{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 1%;
-}
-
-.apresentation-info{
-    width: 100%;
-    height: 100%;
-    border: solid 1px #F6F1F1;
-    font-size: 20px;
-    color: #fff;
-    font-family: 'Jost', sans-serif;
-    display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.apresentation-info:nth-last-child(1){
-    width: 100%; 
+.softSkills-skills{
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    padding: 3% 1%;
+    font-size: 20px;
+
 }
 
-.apresentation-info:nth-last-child(2){
-    width: 100%; 
-}
-
-
-#developer-character{
+#skillsLanguages{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
 }
 
-
-
-
-
-
-/* *********************** Estilizando Skills *********************** */
-
-
-
-
-#skills{
-    margin: auto;
-    margin-top: 15%;
-    width: 95%;
-    height: 16em;
-    gap: 1%;
-    border: solid 1px #F6F1F1;
-    transition: 600ms;
-    padding: 1%;
-    display: grid;
-    grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
-}
-
-
-#skills:after{
-    content: "Skills";
-    width: 18%;
-    height: 1em;
-    background-color: #FF5B22;
-    position: absolute;
-    bottom: 101%;
-    left: 3%;
+.language-icon{
+    border: solid 1px #0174BE;
+    height: 26%;
+    width: 45%;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
-    font-family: 'Zen Dots', sans-serif;
-    border-radius: 5px;
-    border: solid 1px #fff;
-    outline: solid 5px #ff5f22;
+    gap: 7%;
+    background-color: #fff;
+}
+
+.icon-logo{
+    font-size: 30px;
+}
+.language-icon:nth-child(1):hover {
+    background-color: #CF0A0A;
+    border-radius: 10px;
     color: #fff;
-    transition: 2s;
-    scroll-behavior: smooth;
+    transition: 0.3ms;
+
+}
+.language-icon:nth-child(2):hover {
+    background-color: #39A7FF;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(3):hover {
+    background-color: #F4CE14;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(4):hover {
+    background-color: #0174BE;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+.language-icon:nth-child(5):hover {
+    background-color: #508D69;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(6):hover {
+    background-color: #5B0888;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
 }
 
 
-.front{
-    background-color: #fff;
-    height: 100%;
+
+
+
+
+
+/* *********************** ESTILIZANDO PROJECTS *************************  */
+
+
+
+#projects{
     width: 100%;
+    height: 90em;
+    margin: 10% 0;
+    background-color: #19A7CE;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding: 1%;
+}
+
+.card-container{
+    width: 30%;
+    height: 14em;
+    box-shadow: 0px 0px 3px -1px #000;
+    overflow: hidden;
     border-radius: 10px;
     display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1%;
+    position: relative;
+}
+
+
+.card-img-squad{
+    width: 100%;
+    height: 80%;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+.card-control{
+    width: 80%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 11%;
+    top: 100%;
+
+
+
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+.card-container:hover .card-control{
+    top: 20%;
+}
+
+.card-control-btn{
+    background-color: #0174BE;
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.card-control-btn:hover{
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+
+.card-details{
+    width: 100%;
+    height: 100%;
+   background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20em;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 600ms;
+}
+.cardDetailsOpen{
+    top: 2em;   
+}
+.cardDetailsClose{
+    transition: 600ms;
+    top: 20em;
+}
+
+
+.card-detail-title{
+    font-family: 'Bruno Ace SC', sans-serif;
+    border-bottom: solid 1px #fff;
+    padding: 1%;   
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-framework{
-    width: 67%;
-    height: 80%;
-    object-fit: cover;
+
+.card-detail-title:hover{
+    background-color: #0174BE;
+    color: #fff;
+
 }
 
-.img-framework:hover{
-    transform: scale(1.05);
-}
+.card-detail-text{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Oxygen', sans-serif;
 
+}
 
 
 
@@ -1049,8 +1682,28 @@ main{
 .MenuMobileContainer{
     display: none;
 }
+
+
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1233,63 +1886,262 @@ main{
 
 /* *********************** Estilizando Skills *********************** */
 
-
-
-
 #skills{
-    margin: auto;
-    margin-top: 15%;
-    width: 95%;
-    height: 49em;
-    gap: 4%;
-    border: solid 1px #F6F1F1;
-    transition: 600ms;
-    padding: 3%;
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr /1fr 1fr;
-}
-
-
-#skills:after{
-    content: "Skills";
     width: 100%;
-    height: 1em;
-    background-color: #FF5B22;
-    position: absolute;
-    bottom: 102%;
-    left: 0%;
+    height: 50em;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px;
-    font-family: 'Zen Dots', sans-serif;
-    border-radius: 5px;
-    border: solid 1px #fff;
-    outline: solid 5px #ff5f22;
+    flex-direction: column;
+    background-color: #0174BE;
+    margin: 5% 0;
+    padding: 1%;
+    gap: 5%;
+    cursor: default;
+
+}
+
+#softSkills{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.softSkills-skills{
+    font-family: 'Jost', sans-serif;
     color: #fff;
-    transition: 2s;
-    scroll-behavior: smooth;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    padding: 3% 1%;
+    font-size: 20px;
+
+}
+
+#skillsLanguages{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.language-icon{
+    border: solid 1px #0174BE;
+    height: 26%;
+    width: 45%;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    background-color: #fff;
+}
+
+.icon-logo{
+    font-size: 30px;
+}
+.language-icon:nth-child(1):hover {
+    background-color: #CF0A0A;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(2):hover {
+    background-color: #39A7FF;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(3):hover {
+    background-color: #F4CE14;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(4):hover {
+    background-color: #0174BE;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+.language-icon:nth-child(5):hover {
+    background-color: #508D69;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(6):hover {
+    background-color: #5B0888;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
 }
 
 
-.front{
-    background-color: #fff;
-    height: 100%;
+
+
+
+
+
+/* *********************** ESTILIZANDO PROJECTS *************************  */
+
+
+
+#projects{
     width: 100%;
+    height: 90em;
+    margin: 10% 0;
+    background-color: #19A7CE;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding: 1%;
+    overflow: auto;
+}
+
+.card-container{
+    width: 45%;
+    height: 18em;
+    box-shadow: 0px 0px 3px -1px #000;
+    overflow: hidden;
     border-radius: 10px;
     display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1%;
+    position: relative;
+}
+
+
+.card-img-squad{
+    width: 100%;
+    height: 80%;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+.card-control{
+    width: 80%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 11%;
+    top: 100%;
+
+
+
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+.card-container:hover .card-control{
+    top: 20%;
+}
+
+.card-control-btn{
+    background-color: #0174BE;
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.card-control-btn:hover{
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+
+.card-details{
+    width: 100%;
+    height: 100%;
+   background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20em;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 600ms;
+}
+.cardDetailsOpen{
+    top: 2em;   
+}
+.cardDetailsClose{
+    transition: 600ms;
+    top: 20em;
+}
+
+
+.card-detail-title{
+    font-family: 'Bruno Ace SC', sans-serif;
+    border-bottom: solid 1px #fff;
+    padding: 1%;   
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-framework{
-    width: 90%;
-    height: 80%;
-    object-fit: cover;
+
+.card-detail-title:hover{
+    background-color: #0174BE;
+    color: #fff;
+
 }
 
-.img-framework:hover{
-    transform: scale(1.05);
+.card-detail-text{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Oxygen', sans-serif;
+
 }
 
 
@@ -1381,11 +2233,11 @@ transform: translateY(-56px);
 }
 
 #clicked{
-    top: -62%;
+    top: -61.3%;
     left: 2.3em;
     position: absolute;
     background-color: #fff;
-    width: 16%;
+    width: 12%;
     height: 68%;
     border-radius: 14px;
     z-index: -1;
@@ -1395,16 +2247,16 @@ transform: translateY(-56px);
 
 
 .MenuMobileContainer ul .options:nth-child(1).active ~ #clicked{
-    transform: translateX(calc(2.3em* 0));
+    transform: translateX(calc(60%* 0.5));
 
 }
 
 .MenuMobileContainer ul .options:nth-child(2).active ~ #clicked{
-    transform: translateX(calc(100% * 2));
+    transform: translateX(calc(101% * 3));
 }
 
 .MenuMobileContainer ul .options:nth-child(3).active ~ #clicked{
-    transform: translateX(calc(100%* 4));
+    transform: translateX(calc(115%* 5));
 }
 
 
@@ -1514,7 +2366,1731 @@ outline: solid 6px transparent;
 
 
 
+
+
+/**************** MENU SIDE ************************  */
+
+.menuSide-Background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+    display: none;
 }
+
+
+
+
+
+
+
+
+/****************** FOOTER ***************************/
+
+
+footer{
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Osmanya', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Zen Dots', sans-serif;
+    background-color: #DC5F00;
+    width: 100%;
+    height: 15em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 5em;
+    padding: 0 6%;
+}
+
+.contacts{
+    width: 50%;
+    height: 52%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Osmanya', sans-serif;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.contacts a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.contact-Icon{
+    font-size: 40px;
+    color: #fff;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+    header{
+        width: 100%;
+        height: 4em;
+        background-color: #19A7CE;
+        display: flex;
+        justify-content: center;
+        padding: 0 11%;
+        align-items: center;
+        position: fixed;
+        top: 0em;
+        z-index: 100;
+    
+    }
+    
+    #developer-title{
+        font-family: 'Jost', sans-serif;
+        cursor: default;
+        font-size: 35px;
+        color: #fff;
+    }   
+    
+    #menu{
+        display: none;
+        flex-direction: row;
+        width: 20em;
+        height: 100%;
+        justify-content: space-between;
+        list-style: none;
+        display:none;
+    }
+    
+    .list {
+        text-decoration: none;
+        font-size: 15px;
+        color: #fff;
+        font-family: 'Outfit', sans-serif;
+        padding: 5px;
+        border-radius: 10px;
+    
+    
+    }
+    
+    .list:hover{
+        box-shadow: 0px 0px 7px -1px gray;
+        transition: 300ms;
+        background-color: #F6F1F1;
+        color: #19A7CE;
+    }
+    
+    .btn-menu{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        border-radius: 10px;
+        color: #F6F1F1;
+        background-color: #146C94;
+        font-size: 24px;
+        width: 15%;
+        height: 76%;
+    }
+
+
+
+
+
+
+    /* 
+
+**************** Estilizando o MAIN ************************ 
+
+*/
+
+
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+
+#apresentation-Container{
+    margin: auto;
+    margin-top: 30%;
+    width: 95%;
+    height: 66em;
+    background-color: #0174BE;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#developer-apresentation {
+    width: 100%;
+    height: 15%;
+    border: solid 1px #fff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Bruno Ace SC', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+#apresentation-category{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1%;
+}
+
+.apresentation-info{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #F6F1F1;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.apresentation-info:nth-last-child(1){
+    width: 100%; 
+}
+
+.apresentation-info:nth-last-child(2){
+    width: 100%; 
+}
+
+
+#developer-character{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* *********************** Estilizando Skills *********************** */
+
+#skills{
+    width: 100%;
+    height: 60em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0174BE;
+    margin: 5% 0;
+    padding: 1%;
+    gap: 5%;
+    cursor: default;
+
+}
+
+#softSkills{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.softSkills-skills{
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    padding: 3% 1%;
+    font-size: 30px;
+
+}
+
+#skillsLanguages{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.language-icon{
+    border: solid 1px #0174BE;
+    height: 26%;
+    width: 45%;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    background-color: #fff;
+}
+
+.icon-logo{
+    font-size: 30px;
+}
+.language-icon:nth-child(1):hover {
+    background-color: #CF0A0A;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(2):hover {
+    background-color: #39A7FF;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(3):hover {
+    background-color: #F4CE14;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(4):hover {
+    background-color: #0174BE;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+.language-icon:nth-child(5):hover {
+    background-color: #508D69;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(6):hover {
+    background-color: #5B0888;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+
+
+
+
+
+
+/* *********************** ESTILIZANDO PROJECTS *************************  */
+
+
+
+#projects{
+    width: 80%;
+    height: 39em;
+    margin: 10% auto;
+    background-color: #19A7CE;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 13%;
+    padding: 1%;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 15em;
+}
+
+.card-container{
+    width: 88%;
+    height: 20em;
+    box-shadow: 0px 0px 3px -1px #000;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1%;
+    position: relative;
+}
+
+
+.card-img-squad{
+    width: 100%;
+    height: 80%;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+
+
+
+
+
+.card-control{
+    width: 80%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 11%;
+    top: 20%;
+
+
+
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+
+
+.card-container:hover .card-control{
+    top: 20%;
+}
+
+.card-control-btn{
+    background-color: #0174BE;
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.card-control-btn:hover{
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+
+.card-details{
+    width: 100%;
+    height: 100%;
+   background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20em;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 600ms;
+}
+.cardDetailsOpen{
+    top: 2em;   
+}
+.cardDetailsClose{
+    transition: 600ms;
+    top: 20em;
+}
+
+
+.card-detail-title{
+    font-family: 'Bruno Ace SC', sans-serif;
+    border-bottom: solid 1px #fff;
+    padding: 1%;   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-detail-title:hover{
+    background-color: #0174BE;
+    color: #fff;
+
+}
+
+.card-detail-text{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/************** Menu Mobile ***************************/
+
+
+.MenuMobileContainer{
+    display: flex;
+    width: 100%;
+    height: 5em;
+    background-color: #000;
+    z-index: 100;
+    position: fixed;
+    bottom: -0.6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    z-index: 11;
+}
+
+.MenuMobileContainer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 5%;
+}
+.MenuMobileContainer ul .options{
+    position: relative;
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MenuMobileContainer ul .options a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.MenuMobileContainer ul .options a .options-icon{
+    display: block;
+    position: relative;
+    font-size: 1.7em;
+    transition: 0.6s;
+    color: #0174BE;
+}
+
+.MenuMobileContainer ul .options.active a .options-icon{
+transform: translateY(-56px);
+    
+}
+
+.MenuMobileContainer ul .options a .options-title{
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Bruno Ace SC', sans-serif;
+    transition: 500ms ease ;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.MenuMobileContainer ul .options.active a .options-title{
+    opacity: 1;
+    transform: translateY(10px);
+    transition:  500ms ease ;
+
+    
+}
+
+#clicked{
+    top: -61.3%;
+    left: 2.3em;
+    position: absolute;
+    background-color: #fff;
+    width: 14%;
+    height: 68%;
+    border-radius: 14px;
+    z-index: -1;
+    border: solid 4px #0174BE;
+    outline: solid 6px #fff;
+}
+
+
+.MenuMobileContainer ul .options:nth-child(1).active ~ #clicked{
+    transform: translateX(calc(11%* 1));
+
+}
+
+.MenuMobileContainer ul .options:nth-child(2).active ~ #clicked{
+    transform: translateX(calc(82% * 3));
+}
+
+.MenuMobileContainer ul .options:nth-child(3).active ~ #clicked{
+    transform: translateX(calc(96%* 5));
+}
+
+
+.submenu-background{
+    position: fixed;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+.submenu-background-active{
+    transition: 1s;
+    left: 0%;
+    top: 0%;
+}
+
+.submenu-profile{
+    width: 80%;
+    height: 60%;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: #0174BE; */
+    left: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+
+
+
+.submenu-profile-Active{
+    transition: 1.5s;
+    left: 10%;
+    top: 17%;
+}
+
+
+.submenu-profile-links{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.submenu-profile-links .submenu-mobile-btn{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 4px;
+    color: #0174BE;
+    border-radius: 10px;
+    border: solid 2px #0174BE;
+    outline: solid 6px #fff;
+}
+
+.submenu-profile-links .submenu-mobile-btn:active{
+color: #fff;
+background-color: #0174BE;
+transition: 100ms;
+outline: solid 6px transparent;
+}
+
+
+.submenu-contacts{
+    width: 80%;
+    height: 60%;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: #0174BE; */
+    right: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.submenu-contacts-Active{
+    transition: 1.5s;
+    right: 10%;
+    top: 17%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:390px){
+    header{
+        width: 100%;
+        height: 4em;
+        background-color: #19A7CE;
+        display: flex;
+        justify-content: center;
+        padding: 0 11%;
+        align-items: center;
+        position: fixed;
+        top: 0em;
+        z-index: 100;
+    
+    }
+    
+    #developer-title{
+        font-family: 'Jost', sans-serif;
+        cursor: default;
+        font-size: 35px;
+        color: #fff;
+    }   
+    
+    #menu{
+        display: none;
+        flex-direction: row;
+        width: 20em;
+        height: 100%;
+        justify-content: space-between;
+        list-style: none;
+        display:none;
+    }
+    
+    .list {
+        text-decoration: none;
+        font-size: 15px;
+        color: #fff;
+        font-family: 'Outfit', sans-serif;
+        padding: 5px;
+        border-radius: 10px;
+    
+    
+    }
+    
+    .list:hover{
+        box-shadow: 0px 0px 7px -1px gray;
+        transition: 300ms;
+        background-color: #F6F1F1;
+        color: #19A7CE;
+    }
+    
+    .btn-menu{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        border-radius: 10px;
+        color: #F6F1F1;
+        background-color: #146C94;
+        font-size: 24px;
+        width: 15%;
+        height: 76%;
+    }
+
+
+
+
+
+
+    /* 
+
+**************** Estilizando o MAIN ************************ 
+
+*/
+
+
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+
+#apresentation-Container{
+    margin: auto;
+    margin-top: 30%;
+    width: 95%;
+    height: 66em;
+    background-color: #0174BE;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#developer-apresentation {
+    width: 100%;
+    height: 15%;
+    border: solid 1px #fff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Bruno Ace SC', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+#apresentation-category{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1%;
+}
+
+.apresentation-info{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #F6F1F1;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.apresentation-info:nth-last-child(1){
+    width: 100%; 
+}
+
+.apresentation-info:nth-last-child(2){
+    width: 100%; 
+}
+
+
+#developer-character{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* *********************** Estilizando Skills *********************** */
+
+#skills{
+    width: 100%;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0174BE;
+    margin: 5% 0;
+    padding: 1%;
+    gap: 5%;
+    cursor: default;
+
+}
+
+#softSkills{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.softSkills-skills{
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    padding: 3% 1%;
+    font-size: 30px;
+
+}
+
+#skillsLanguages{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.language-icon{
+    border: solid 1px #0174BE;
+    height: 26%;
+    width: 45%;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    background-color: #fff;
+}
+
+.icon-logo{
+    font-size: 30px;
+}
+.language-icon:nth-child(1):hover {
+    background-color: #CF0A0A;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(2):hover {
+    background-color: #39A7FF;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(3):hover {
+    background-color: #F4CE14;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(4):hover {
+    background-color: #0174BE;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+.language-icon:nth-child(5):hover {
+    background-color: #508D69;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(6):hover {
+    background-color: #5B0888;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+
+
+
+
+
+
+
+
+
+
+/************** Menu Mobile ***************************/
+
+
+.MenuMobileContainer{
+    display: flex;
+    width: 100%;
+    height: 5em;
+    background-color: #000;
+    z-index: 100;
+    position: fixed;
+    bottom: -0.6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    z-index: 11;
+}
+
+.MenuMobileContainer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 5%;
+}
+.MenuMobileContainer ul .options{
+    position: relative;
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MenuMobileContainer ul .options a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.MenuMobileContainer ul .options a .options-icon{
+    display: block;
+    position: relative;
+    font-size: 1.7em;
+    transition: 0.6s;
+    color: #0174BE;
+}
+
+.MenuMobileContainer ul .options.active a .options-icon{
+transform: translateY(-56px);
+    
+}
+
+.MenuMobileContainer ul .options a .options-title{
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Bruno Ace SC', sans-serif;
+    transition: 500ms ease ;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.MenuMobileContainer ul .options.active a .options-title{
+    opacity: 1;
+    transform: translateY(10px);
+    transition:  500ms ease ;
+
+    
+}
+
+#clicked{
+    top: -61.3%;
+    left: 2.3em;
+    position: absolute;
+    background-color: #fff;
+    width: 15%;
+    height: 68%;
+    border-radius: 14px;
+    z-index: -1;
+    border: solid 4px #0174BE;
+    outline: solid 6px #fff;
+}
+
+
+.MenuMobileContainer ul .options:nth-child(1).active ~ #clicked{
+    transform: translateX(calc(4%* 1));
+
+}
+
+.MenuMobileContainer ul .options:nth-child(2).active ~ #clicked{
+    transform:translateX(calc(55% * 4));
+}
+
+.MenuMobileContainer ul .options:nth-child(3).active ~ #clicked{
+    transform: translateX(calc(88%* 5));
+}
+
+
+.submenu-background{
+    position: fixed;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+.submenu-background-active{
+    transition: 1s;
+    left: 0%;
+    top: 0%;
+}
+
+.submenu-profile{
+    width: 80%;
+    height: 60%;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: #0174BE; */
+    left: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+
+
+
+.submenu-profile-Active{
+    transition: 1.5s;
+    left: 10%;
+    top: 17%;
+}
+
+
+.submenu-profile-links{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.submenu-profile-links .submenu-mobile-btn{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 4px;
+    color: #0174BE;
+    border-radius: 10px;
+    border: solid 2px #0174BE;
+    outline: solid 6px #fff;
+}
+
+.submenu-profile-links .submenu-mobile-btn:active{
+color: #fff;
+background-color: #0174BE;
+transition: 100ms;
+outline: solid 6px transparent;
+}
+
+
+.submenu-contacts{
+    width: 80%;
+    height: 60%;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: #0174BE; */
+    right: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.submenu-contacts-Active{
+    transition: 1.5s;
+    right: 10%;
+    top: 17%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:320px){
+    header{
+        width: 100%;
+        height: 4em;
+        background-color: #19A7CE;
+        display: flex;
+        justify-content: center;
+        padding: 0 11%;
+        align-items: center;
+        position: fixed;
+        top: 0em;
+        z-index: 100;
+    
+    }
+    
+    #developer-title{
+        font-family: 'Jost', sans-serif;
+        cursor: default;
+        font-size: 35px;
+        color: #fff;
+    }   
+    
+    #menu{
+        display: none;
+        flex-direction: row;
+        width: 20em;
+        height: 100%;
+        justify-content: space-between;
+        list-style: none;
+        display:none;
+    }
+    
+    .list {
+        text-decoration: none;
+        font-size: 15px;
+        color: #fff;
+        font-family: 'Outfit', sans-serif;
+        padding: 5px;
+        border-radius: 10px;
+    
+    
+    }
+    
+    .list:hover{
+        box-shadow: 0px 0px 7px -1px gray;
+        transition: 300ms;
+        background-color: #F6F1F1;
+        color: #19A7CE;
+    }
+    
+    .btn-menu{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+        border-radius: 10px;
+        color: #F6F1F1;
+        background-color: #146C94;
+        font-size: 24px;
+        width: 15%;
+        height: 76%;
+    }
+
+
+
+
+
+
+    /* 
+
+**************** Estilizando o MAIN ************************ 
+
+*/
+
+
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+
+#apresentation-Container{
+    margin: auto;
+    margin-top: 30%;
+    width: 95%;
+    height: 66em;
+    background-color: #0174BE;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#developer-apresentation {
+    width: 100%;
+    height: 15%;
+    border: solid 1px #fff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Bruno Ace SC', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+#apresentation-category{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 1%;
+}
+
+.apresentation-info{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #F6F1F1;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.apresentation-info:nth-last-child(1){
+    width: 100%; 
+}
+
+.apresentation-info:nth-last-child(2){
+    width: 100%; 
+}
+
+
+#developer-character{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* *********************** Estilizando Skills *********************** */
+
+#skills{
+    width: 100%;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0174BE;
+    margin: 5% 0;
+    padding: 1%;
+    gap: 5%;
+    cursor: default;
+
+}
+
+#softSkills{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.softSkills-skills{
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+    width: 100%;
+    padding: 3% 1%;
+    font-size: 23px;
+
+}
+
+#skillsLanguages{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    flex-wrap: wrap;
+}
+
+.language-icon{
+    border: solid 1px #0174BE;
+    height: 26%;
+    width: 45%;
+    font-size: 18px;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    background-color: #fff;
+}
+
+.icon-logo{
+    font-size: 30px;
+}
+.language-icon:nth-child(1):hover {
+    background-color: #CF0A0A;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(2):hover {
+    background-color: #39A7FF;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(3):hover {
+    background-color: #F4CE14;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(4):hover {
+    background-color: #0174BE;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+    box-shadow: 0px 0px 2px 1px #000;
+}
+.language-icon:nth-child(5):hover {
+    background-color: #508D69;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+.language-icon:nth-child(6):hover {
+    background-color: #5B0888;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************** Menu Mobile ***************************/
+
+
+.MenuMobileContainer{
+    display: flex;
+    width: 100%;
+    height: 5em;
+    background-color: #000;
+    z-index: 100;
+    position: fixed;
+    bottom: -0.6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    z-index: 11;
+}
+
+.MenuMobileContainer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    padding: 0 5%;
+}
+.MenuMobileContainer ul .options{
+    position: relative;
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MenuMobileContainer ul .options a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.MenuMobileContainer ul .options a .options-icon{
+    display: block;
+    position: relative;
+    font-size: 1.7em;
+    transition: 0.6s;
+    color: #0174BE;
+}
+
+.MenuMobileContainer ul .options.active a .options-icon{
+transform: translateY(-56px);
+    
+}
+
+.MenuMobileContainer ul .options a .options-title{
+    position: absolute;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Bruno Ace SC', sans-serif;
+    transition: 500ms ease ;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.MenuMobileContainer ul .options.active a .options-title{
+    opacity: 1;
+    transform: translateY(10px);
+    transition:  500ms ease ;
+
+    
+}
+
+#clicked{
+    top: -61.3%;
+    left: 2.3em;
+    position: absolute;
+    background-color: #fff;
+    width: 18%;
+    height: 68%;
+    border-radius: 14px;
+    z-index: -1;
+    border: solid 4px #0174BE;
+    outline: solid 6px #fff;
+}
+
+
+.MenuMobileContainer ul .options:nth-child(1).active ~ #clicked{
+    transform: translateX(calc(-19%* 1));
+
+}
+
+.MenuMobileContainer ul .options:nth-child(2).active ~ #clicked{
+    transform:translateX(calc(41% * 4));
+}
+
+.MenuMobileContainer ul .options:nth-child(3).active ~ #clicked{
+    transform: translateX(calc(70%* 5));
+}
+
+
+.submenu-background{
+    position: fixed;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+.submenu-background-active{
+    transition: 1s;
+    left: 0%;
+    top: 0%;
+}
+
+.submenu-profile{
+    width: 80%;
+    height: 60%;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: #0174BE; */
+    left: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+
+
+
+.submenu-profile-Active{
+    transition: 1.5s;
+    left: 10%;
+    top: 17%;
+}
+
+
+.submenu-profile-links{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.submenu-profile-links .submenu-mobile-btn{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-family: 'Bruno Ace SC', sans-serif;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 4px;
+    color: #0174BE;
+    border-radius: 10px;
+    border: solid 2px #0174BE;
+    outline: solid 6px #fff;
+}
+
+.submenu-profile-links .submenu-mobile-btn:active{
+color: #fff;
+background-color: #0174BE;
+transition: 100ms;
+outline: solid 6px transparent;
+}
+
+
+.submenu-contacts{
+    width: 80%;
+    height: 60%;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    position: absolute;
+    /* background-color: #0174BE; */
+    right: 100%;
+    transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.submenu-contacts-Active{
+    transition: 1.5s;
+    right: 10%;
+    top: 17%;
+}
+
+}
+
 
 
 
