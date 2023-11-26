@@ -372,8 +372,16 @@ main{
 
 .card-img-squad{
     width: 100%;
-    height: 80%;
-    border: solid 1px #fff;
+    height: 49%;
+
+    border-radius: 5px;
+}
+
+
+.card-img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 5px;
 }
 
@@ -382,39 +390,30 @@ main{
 
 
 .card-control{
-    width: 80%;
-    height: 60%;
-    background-color: #fff;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    left: 11%;
+    left: 0%;
     top: 100%;
-
-
-
-    background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-
+    background-color: rgba(0, 0, 0, 0.2);
+    gap: 15%;
 }
 
 
 
 .card-container:hover .card-control{
-    top: 20%;
+    top: 0%;
 }
 
 .card-control-btn{
     background-color: #0174BE;
     width: 80%;
-    height: 20%;
+    height: 10%;
     padding: 1%;
     font-size: 12px;
     text-decoration: none;
@@ -450,7 +449,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 600ms;
 }
 .cardDetailsOpen{
-    top: 2em;   
+    top: 0em;   
 }
 .cardDetailsClose{
     transition: 600ms;
@@ -805,6 +804,20 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:900px){
     header{
         width: 100%;
@@ -1096,9 +1109,9 @@ main{
 
 .card-img-squad{
     width: 100%;
-    height: 80%;
-    border: solid 1px #fff;
+    height: 49%;
     border-radius: 5px;
+    margin: 0 1em;
 }
 
 
@@ -1106,39 +1119,30 @@ main{
 
 
 .card-control{
-    width: 80%;
-    height: 60%;
-    background-color: #fff;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    left: 11%;
+    left: 0%;
     top: 100%;
-
-
-
-    background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-
+    background-color: rgba(0, 0, 0, 0.2);
+    gap: 15%;
 }
 
 
 
 .card-container:hover .card-control{
-    top: 20%;
+    top: 0%;
 }
 
 .card-control-btn{
     background-color: #0174BE;
     width: 80%;
-    height: 20%;
+    height: 10%;
     padding: 1%;
     font-size: 12px;
     text-decoration: none;
@@ -1174,7 +1178,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 600ms;
 }
 .cardDetailsOpen{
-    top: 2em;   
+    top: 0em;   
 }
 .cardDetailsClose{
     transition: 600ms;
@@ -1553,49 +1557,39 @@ main{
 
 .card-img-squad{
     width: 100%;
-    height: 80%;
-    border: solid 1px #fff;
+    height: 49%;
     border-radius: 5px;
+    margin: 0 1em;
 }
 
 
-
-
-
 .card-control{
-    width: 80%;
-    height: 60%;
-    background-color: #fff;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    left: 11%;
+    left: 0%;
     top: 100%;
-
-
-
-    background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-
+    background-color: rgba(0, 0, 0, 0.2);
+    gap: 15%;
 }
 
 
 
 .card-container:hover .card-control{
-    top: 20%;
+    top: 0%;
 }
+
+
 
 .card-control-btn{
     background-color: #0174BE;
     width: 80%;
-    height: 20%;
+    height: 10%;
     padding: 1%;
     font-size: 12px;
     text-decoration: none;
@@ -1631,7 +1625,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 600ms;
 }
 .cardDetailsOpen{
-    top: 2em;   
+    top: 0em;   
 }
 .cardDetailsClose{
     transition: 600ms;
@@ -2026,43 +2020,33 @@ main{
 
 .card-img-squad{
     width: 100%;
-    height: 80%;
-    border: solid 1px #fff;
+    height: 49%;
     border-radius: 5px;
+    margin: 0;
 }
-
 
 
 
 
 .card-control{
-    width: 80%;
-    height: 60%;
-    background-color: #fff;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    left: 11%;
+    left: 0%;
     top: 100%;
-
-
-
-    background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-
+    background-color: rgba(0, 0, 0, 0.2);
+    gap: 15%;
 }
 
 
 
 .card-container:hover .card-control{
-    top: 20%;
+    top: 0%;
 }
 
 .card-control-btn{
@@ -2104,7 +2088,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 600ms;
 }
 .cardDetailsOpen{
-    top: 2em;   
+    top: 0em;   
 }
 .cardDetailsClose{
     transition: 600ms;
@@ -2282,7 +2266,7 @@ transform: translateY(-56px);
 }
 
 .submenu-profile{
-    width: 80%;
+    width: 55%;
     height: 60%;
     border: solid 1px #fff;
     border-radius: 10px;
@@ -2302,7 +2286,7 @@ transform: translateY(-56px);
 
 .submenu-profile-Active{
     transition: 1.5s;
-    left: 10%;
+    left: 22%;
     top: 17%;
 }
 
@@ -2340,7 +2324,7 @@ outline: solid 6px transparent;
 
 
 .submenu-contacts{
-    width: 80%;
+    width: 55%;
     height: 60%;
     border: solid 1px #fff;
     border-radius: 10px;
@@ -2357,7 +2341,7 @@ outline: solid 6px transparent;
 
 .submenu-contacts-Active{
     transition: 1.5s;
-    right: 10%;
+    right: 22%;
     top: 17%;
 }
 
@@ -2404,9 +2388,9 @@ footer{
     font-family: 'Zen Dots', sans-serif;
     background-color: #DC5F00;
     width: 100%;
-    height: 15em;
+    height: 20em;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     align-items: start;
     margin-bottom: 5em;
@@ -2414,16 +2398,13 @@ footer{
 }
 
 .contacts{
-    width: 50%;
+    width: 100%;
     height: 52%;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    font-family: 'Bruno Ace SC', sans-serif;
-    font-family: 'Jost', sans-serif;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Noto Sans Osmanya', sans-serif;
     font-family: 'Outfit', sans-serif;
 
 }
@@ -2444,6 +2425,24 @@ footer{
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2756,43 +2755,33 @@ main{
 
 .card-img-squad{
     width: 100%;
-    height: 80%;
-    border: solid 1px #fff;
+    height: 49%;
     border-radius: 5px;
+    margin: 0 5%;
 }
-
 
 
 
 
 .card-control{
-    width: 80%;
-    height: 60%;
-    background-color: #fff;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    left: 11%;
-    top: 20%;
-
-
-
-    background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-
+    left: 0%;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    gap: 15%;
 }
 
 
 
 .card-container:hover .card-control{
-    top: 20%;
+    top: 0%;
 }
 
 .card-control-btn{
@@ -2800,7 +2789,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     width: 80%;
     height: 20%;
     padding: 1%;
-    font-size: 12px;
+    font-size: 18px;
     text-decoration: none;
     font-family: 'Bruno Ace SC', sans-serif;
     display: flex;
@@ -2814,8 +2803,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .card-control-btn:hover{
     color: #fff;
-    letter-spacing: 5px;
-    font-size: 10px;
+    letter-spacing: 2px;
+    font-size: 19px;
 }
 
 
@@ -2834,7 +2823,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     transition: 600ms;
 }
 .cardDetailsOpen{
-    top: 2em;   
+    top: 0em;   
 }
 .cardDetailsClose{
     transition: 600ms;
@@ -2847,7 +2836,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: solid 1px #fff;
     padding: 1%;   
     width: 100%;
-    height: 100%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2871,7 +2860,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
     padding: 1%;
     font-family: 'Oxygen', sans-serif;
-
+    font-size: 18px;
 }
 
 
