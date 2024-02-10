@@ -60,6 +60,12 @@ padding: 1%;
     padding: 1%;
 }
 
+.react-icon{
+    color: #40A2E3;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
 
 body{
     width: 100%;
